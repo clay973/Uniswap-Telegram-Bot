@@ -1,13 +1,13 @@
 [PrimaryToken]
-primarytokenname = GET Protocol
-primarytokensymbol = GET
-primarytokencontractaddress = 0x8a854288a5976036a725879164ca3e91d30c6a1b
+primarytokenname = Options.Market (OSM)
+primarytokensymbol = OSM
+primarytokencontractaddress = 0x9b75848172677042269c63365b57b0a51c21d031
 
 [EtherScanAPI]
 etherscanapikey = ETHERSCANAPIKEYHERE
 
 [Uniswap]
-uniswapaddress = 0x2680a95fc9de215f1034f073185cc1f2a28b4107
+uniswapaddress = 0x853d6a51573fb3da673e20852fbfc79ca47ae6f6
 
 [Process]
 lastprocessedblocknumber = 0
