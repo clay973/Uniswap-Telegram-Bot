@@ -7,8 +7,8 @@ This bot provides information when a swap or liquidity change for a specific Uni
 git clone -q https://github.com/clay973/Uniswap-Telegram-Bot.git YOURTARGETDIR
 ```
 * Copy settings.default to settings.config
-* Add the Telegram bot API and the etherscan API
-* Change the attributes in the [PrimaryToken]  (By default these attributes are configured for the OSM token )
+* Add the Telegram bot API and the etherscan API to settings.config
+* Change the attributes in the [PrimaryToken] in settings.config (By default these attributes are configured for the OSM token )
 * Create a virtual environment
 ```
 python3 -m venv env
