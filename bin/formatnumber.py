@@ -1,9 +1,9 @@
-def formatnumber(number,ndigits=2):
-    # Format the number with 2 digits behind the comma
+def formatnumber(number,ndigits):
+    # Format the number with x digits behind the comma
     number = round(number, ndigits)
     numberparts = str(number).split('.')
 
-    # Format the number before the comma with a space as 1000 seperator
+    # Format the number before the decimal with a comma as 1000 seperator
     l = len(numberparts[0]) - 1
     blocks = int(l / 3)
     offset = len(numberparts[0]) % 3
@@ -14,13 +14,13 @@ def formatnumber(number,ndigits=2):
         output = numberparts[0][:offset]
 
     for r in range(blocks):
-        output += ' '
+        output += '.'
         output += numberparts[0][offset:offset + 3]
         offset += 3
 
     # If numbers has decimals
     if len(numberparts) == 2:
-        output = output + "," + numberparts[1]
+        output = output + "." + numberparts[1]
 
     return output
 
