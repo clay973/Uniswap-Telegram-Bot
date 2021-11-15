@@ -14,7 +14,7 @@ def formatnumber(number,ndigits=2):
         output = numberparts[0][:offset]
 
     for r in range(blocks):
-        output += '.'
+        output += ','
         output += numberparts[0][offset:offset + 3]
         offset += 3
 
