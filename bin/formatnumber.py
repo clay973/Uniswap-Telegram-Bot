@@ -1,4 +1,4 @@
-def formatnumber(number,ndigits):
+def formatnumber(number,ndigits=2):
     # Format the number with x digits behind the comma
     number = round(number, ndigits)
     numberparts = str(number).split('.')
