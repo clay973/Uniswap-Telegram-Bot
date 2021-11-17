@@ -1,4 +1,15 @@
 def formatnumber(number,ndigits=2):
+    if (ndigits == 4):
+        formnum = "{:,.4f}".format(number)
+    elif (ndigits == 8):
+        formnum = "{:,.8f}".format(number)   
+    else:
+        formnum = "{:,.2f}".format(number)
+        
+    return str(formnum)
+
+
+def formatnumberold(number,ndigits=2):
     # Format the number with x digits behind the comma
     number = round(number, ndigits)
     numberparts = str(number).split('.')
