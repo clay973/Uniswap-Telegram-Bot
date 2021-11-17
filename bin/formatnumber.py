@@ -1,14 +1,5 @@
 def formatnumber(number,ndigits=2):
     
-    #if (ndigits == 4):
-    #    formnum = "{:,.4f}".format(number)
-    #elif (ndigits == 8):
-    #    formnum = "{:,.8f}".format(number)   
-    #else:
-    #    formnum = "{:,.2f}".format(number)
-        
-    #return str(formnum)
-    
     formstr = str("{:,." + str(ndigits) + "f}")
     newnum = formstr.format(number)
     
